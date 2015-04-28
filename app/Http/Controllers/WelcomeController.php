@@ -42,13 +42,11 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
-		// $locations = Location::all();
+		$locations = Location::all();
 
-		return view('welcome');
-		
-	    // return view('welcome', [
-	    //   'locations' => $locations
-	    // ]);
+	    return view('welcome', [
+	      'locations' => $locations
+	    ]);
 	}
 
 	public function about()
