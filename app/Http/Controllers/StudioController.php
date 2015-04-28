@@ -9,6 +9,7 @@ use App\Models\Query;
 use App\Models\Style;
 
 use Auth;
+use Cache;
 
 use Illuminate\Http\Request;
 use \Twitter;
@@ -38,12 +39,18 @@ class StudioController extends Controller {
       return redirect('/');
     }
 
-    $trimmed_studio_name = strtolower($studio->name);
-    $trimmed_studio_name = preg_replace('/[[:punct:]]/', '', $trimmed_studio_name);
-    $trimmed_studio_name = trim($trimmed_studio_name, ' ');
-
-    $tweets = Twitter::getSearch(array('q' => $trimmed_studio_name, 'count' => 100, 'format' => 'array'));
-    $tweets = $tweets['statuses'];
+    // CACHING + API CALL TO TWITTER
+    if (Cache::has($id))
+    {
+      $tweets = Cache::get($id);
+    } else {
+      $trimmed_studio_name = strtolower($studio->name);
+      $trimmed_studio_name = preg_replace('/[[:punct:]]/', '', $trimmed_studio_name);
+      $trimmed_studio_name = trim($trimmed_studio_name, ' ');
+      $tweets = Twitter::getSearch(array('q' => $trimmed_studio_name, 'count' => 100, 'format' => 'array'));
+      $tweets = $tweets['statuses'];
+      Cache::put($id, $tweets, 60);
+    }
 
     return view('studio_details', [
         'studio' => $studio,
