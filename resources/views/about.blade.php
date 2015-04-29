@@ -14,7 +14,7 @@
 		<b>Namaste</b> is backed with a MySQL database and uses Laravel / MVC, PHP / HTML / CSS,
 		Bootstrap CSS, HTML forms, Twitter API, Blade templating, Eloquent ORM and eager loading.
 		<br><br>
-		View the source code <a href="http://github.com/erikamj/namaste/">here</a>.
+		View the source code <a href="http://github.com/erikamjoh/namaste/">here</a>.
 	</p>
 </div>
 
