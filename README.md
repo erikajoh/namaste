@@ -1,7 +1,7 @@
 # namaste
 
 ### Namaste
-Bringing you the west coast's best yoga.
+Bringing you the west coast's best yoga. View site [here](www.namasteyoga.herokuapp.com).
 
 ### App Features
 &mdash; search for yoga classes <br>
@@ -22,6 +22,11 @@ Bringing you the west coast's best yoga.
 &mdash; Eager loading <br>
 &mdash; Twitter API <br>
 &mdash; Laravel's Cache class
+
+### Demo
+
+[![](screenshots/namaste1.png)](https://vimeo.com/126330551)
+
 
 ### Screenshots
 ![](screenshots/namaste1.png)

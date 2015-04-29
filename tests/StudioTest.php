@@ -2,13 +2,13 @@
 
 class StudioTest extends TestCase {
 
-  public function testValidateReturnsFalseIfYogaClassNameIsMissing()
+  public function testValidateReturnsFalseIfStudioNameIsMissing()
   {
     $validation = \App\Models\Studio::validate([]);
     $this->assertEquals($validation->passes(), false);
   }
 
-  public function testValidateReturnsTrueIfYogaClassNameIsPresent()
+  public function testValidateReturnsTrueIfStudioNameIsPresent()
   {
     $validation = \App\Models\Studio::validate([
       'studio_name' => 'Runyon Yoga'
