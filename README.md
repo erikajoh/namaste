@@ -1,17 +1,15 @@
-# itp405-spring2015-mvc
+# namaste
 
-### The DVD App
-DVDs por favor :)
+### Namaste
+Bringing you the west coast's best yoga.
 
 ### App Features
-&mdash; view all dvds <br>
-&mdash; search for dvds <br>
-&mdash; view all genres <br>
-&mdash; view all dvds in a genre <br>
-&mdash; write reviews of dvds <br>
-&mdash; view reviews of dvds <br>
-&mdash; create dvds <br>
-&mdash; view Rotten Tomato data
+&mdash; search for yoga classes <br>
+&mdash; view all studios by location <br>
+&mdash; rate yoga classes and studios <br>
+&mdash; view tweets about studios <br>
+&mdash; edit profile (admin only) <br>
+&mdash; add classes and studios (admin only)
 
 ### Technologies Used
 &mdash; Laravel / MVC <br>
@@ -22,13 +20,23 @@ DVDs por favor :)
 &mdash; Blade templating <br>
 &mdash; Eloquent ORM <br>
 &mdash; Eager loading <br>
-&mdash; Rotten Tomatoes API <br>
+&mdash; Twitter API <br>
 &mdash; Laravel's Cache class
 
 ### Screenshots
-![](screenshots/thedvdapp1.png)
-![](screenshots/thedvdapp2.png)
-![](screenshots/thedvdapp3.png)
-![](screenshots/thedvdapp4.png)
-![](screenshots/thedvdapp5.png)
-![](screenshots/thedvdapp6.png)
+![](screenshots/namaste1.png)
+![](screenshots/namaste2.png)
+![](screenshots/namaste3.png)
+![](screenshots/namaste4.png)
+![](screenshots/namaste5.png)
+![](screenshots/namaste6.png)
+![](screenshots/namaste7.png)
+![](screenshots/namaste8.png)
+![](screenshots/namaste9.png)
+![](screenshots/namaste10.png)
+![](screenshots/namaste11.png)
+![](screenshots/namaste12.png)
+![](screenshots/namaste13.png)
+![](screenshots/namaste14.png)
+![](screenshots/namaste15.png)
+![](screenshots/namaste16.png)
