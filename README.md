@@ -1,5 +1,7 @@
 # namaste
 
+[![Build Status](https://travis-ci.org/erikamjoh/namaste.svg?branch=master)](https://travis-ci.org/erikamjoh/namaste)
+
 ### Namaste
 Bringing you the west coast's best yoga. View site [here](http://namasteyoga.herokuapp.com).
 
